@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFE523C5-6A71-40D6-8667-4FB9E3F482F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>勤工俭学管理系统</RootNamespace>
+    <AssemblyName>勤工俭学管理系统</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs" />
+    <Compile Include="Regis.cs" />
+    <Compile Include="修改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改.Designer.cs">
+      <DependentUpon>修改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改个人信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改个人信息.Designer.cs">
+      <DependentUpon>修改个人信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发布.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发布.Designer.cs">
+      <DependentUpon>发布.cs</DependentUpon>
+    </Compile>
+    <Compile Include="工资.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="工资.Designer.cs">
+      <DependentUpon>工资.cs</DependentUpon>
+    </Compile>
+    <Compile Include="注册公司.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="注册公司.Designer.cs">
+      <DependentUpon>注册公司.cs</DependentUpon>
+    </Compile>
+    <Compile Include="注册学生.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="注册学生.Designer.cs">
+      <DependentUpon>注册学生.cs</DependentUpon>
+    </Compile>
+    <Compile Include="注册用户.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="注册用户.Designer.cs">
+      <DependentUpon>注册用户.cs</DependentUpon>
+    </Compile>
+    <Compile Include="注册管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="注册管理.Designer.cs">
+      <DependentUpon>注册管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登陆.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登陆.Designer.cs">
+      <DependentUpon>登陆.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改管理窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改管理窗口.Designer.cs">
+      <DependentUpon>修改管理窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="删除管理窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="删除管理窗口.Designer.cs">
+      <DependentUpon>删除管理窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="发布管理窗口.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="发布管理窗口.Designer.cs">
+      <DependentUpon>发布管理窗口.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生.Designer.cs">
+      <DependentUpon>学生.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="招聘方.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="招聘方.Designer.cs">
+      <DependentUpon>招聘方.cs</DependentUpon>
+    </Compile>
+    <Compile Include="聘用.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="聘用.Designer.cs">
+      <DependentUpon>聘用.cs</DependentUpon>
+    </Compile>
+    <Compile Include="超级管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="超级管理.Designer.cs">
+      <DependentUpon>超级管理.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="修改.resx">
+      <DependentUpon>修改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改个人信息.resx">
+      <DependentUpon>修改个人信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改管理窗口.resx">
+      <DependentUpon>修改管理窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="删除管理窗口.resx">
+      <DependentUpon>删除管理窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发布.resx">
+      <DependentUpon>发布.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="发布管理窗口.resx">
+      <DependentUpon>发布管理窗口.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="工资.resx">
+      <DependentUpon>工资.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="注册公司.resx">
+      <DependentUpon>注册公司.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="注册学生.resx">
+      <DependentUpon>注册学生.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="注册用户.resx">
+      <DependentUpon>注册用户.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="注册管理.resx">
+      <DependentUpon>注册管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登陆.resx">
+      <DependentUpon>登陆.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="学生.resx">
+      <DependentUpon>学生.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="招聘方.resx">
+      <DependentUpon>招聘方.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="聘用.resx">
+      <DependentUpon>聘用.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="超级管理.resx">
+      <DependentUpon>超级管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
